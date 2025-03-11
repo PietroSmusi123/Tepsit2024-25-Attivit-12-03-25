@@ -8,3 +8,5 @@ Autore: link
 Dove link è un link ad una pagina author.jsp che visualizza il nome, il cognome, e classe dell'autore e <data> è la data del giorno in cui viene visitata la pagina
 
 Inoltre deve funzionare la API REST /api/test/eleonora come da Guida
+
+RIFERIMENTO: https://www.html.it/guide/restful-web-services-in-java-con-jersey/
