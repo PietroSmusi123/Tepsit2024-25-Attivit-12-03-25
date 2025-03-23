@@ -1,12 +1,34 @@
 # Tepsit2024-25-Attivit-12-03-25
 
-Seguendo le prime TRE lezioni della guida [1] creare un progetto Maven con il nome HelloWeb che se interrogata nella home (index.jsp) scrive un messaggio
-"
+HelloWeb - Progetto Maven
+
+  Descrizione del Progetto
+Il progetto HelloWeb ha le seguenti funzionalità principali:
+
+Pagina di Benvenuto (index.jsp):
+
+Quando un utente visita la pagina principale (index.jsp), viene visualizzato il messaggio:
 Benvenuto Utente Curioso, questo è la mia prima JSP. Oggi è il giorno <data>
-Autore: link
-"
-Dove link è un link ad una pagina author.jsp che visualizza il nome, il cognome, e classe dell'autore e <data> è la data del giorno in cui viene visitata la pagina
+Autore: <link>
+Dove:
+<data> è la data corrente (data di visita).
+<link> è un collegamento a una pagina chiamata author.jsp che mostra i dettagli dell'autore.
+Pagina dell'Autore (author.jsp):
 
-Inoltre deve funzionare la API REST /api/test/eleonora come da Guida
+La pagina author.jsp visualizza le informazioni dell'autore, incluse:
+Nome
+Cognome
+Classe dell'autore
+API REST:
 
-RIFERIMENTO: https://www.html.it/guide/restful-web-services-in-java-con-jersey/
+È presente una API REST che risponde alla richiesta /api/test/eleonora con un messaggio predefinito.
+Componenti Utilizzati
+Maven:
+
+Maven è stato utilizzato come sistema di gestione dei progetti. Tutte le dipendenze sono state gestite tramite il file pom.xml.
+JSP (JavaServer Pages):
+
+La pagina index.jsp è una JSP che genera il contenuto dinamico (data corrente e messaggio di benvenuto).
+API REST:
+
+L'API REST /api/test/eleonora è implementata come una servlet che gestisce le richieste GET.
